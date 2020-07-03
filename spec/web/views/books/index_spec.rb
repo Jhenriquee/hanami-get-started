@@ -20,7 +20,7 @@ RSpec.describe Web::Views::Books::Index, type: :view do
     let(:exposures) { Hash[books: [book1, book2]] }
 
     it 'lists them all' do
-      expect(rendered.scan(/class="boook"/).length).to eq(2)
+      expect(rendered.scan(/class="book"/).length).to eq(2)
       expect(rendered).to include('Refactoring')
       expect(rendered).to include('Domain Driven Design')
     end
